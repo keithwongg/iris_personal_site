@@ -72,7 +72,7 @@ b {
   display: flex;
   flex-direction: column;
   place-items: center;
-  height: 100%;
+  height: fit-content;
   width: 630px;
   margin-top: 48px;
   margin-bottom: 48px;
@@ -80,7 +80,7 @@ b {
 
 .container-sub {
   place-items: start;
-  height: fit-content;
+  margin-top: 0px;
   margin-bottom: 80px;
 }
 
@@ -157,6 +157,15 @@ b {
   margin-top: 32px;
 }
 
+.cards-ext {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 32px;
+}
+
 .card {
   height: 70px;
   width: 230px;
@@ -196,10 +205,6 @@ b {
   object-fit: cover;
 }
 
-.book-links>h2 {
-  font-size: 40px;
-}
-
 .schedule-img-container {
   width: 100%;
   overflow: scroll;
@@ -234,8 +239,14 @@ b {
     font-size: 46px;
   }
 
+  .header-container-sub>h1 {
+    margin: 0px;
+    font-size: 46px;
+  }
+
   .container {
     margin-top: 24px;
+    height: fit-content;
     width: 530px;
   }
 
@@ -256,7 +267,21 @@ b {
 
 @media (max-width: 600px) {
 
-  .container {
+  .header-container,
+  .header-container-sub {
+    margin-top: 18px;
+    gap: 18px;
+  }
+
+  .header-container>h1,
+  .header-container-sub>h1 {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .container,
+  .container-sub,
+  .header-container-sub {
     width: 80%;
   }
 
@@ -266,17 +291,7 @@ b {
   }
 
   .bg-container {
-    height: 120px;
-  }
-
-  .header-container {
-    margin-top: 18px;
-    gap: 18px;
-  }
-
-  .header-container>h1 {
-    margin-top: 10px;
-    font-size: 30px;
+    min-height: 120px;
   }
 
   .intro-container {
