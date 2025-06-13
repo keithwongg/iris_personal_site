@@ -7,22 +7,66 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Iris Sim Gwek Keow</title>
   <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
 </head>
 
 <body>
 
-  <div class="bg-container">
+  <div class="bg-container bg-blur">
   </div>
 
-  <main>
+  <main class="index-page-container">
 
-    <div class="header-container">
-      <img class="dp" src="images/dp.jpg">
-      <h1>Iris Sim Gwek Keow</h1>
-    </div>
+    <div class="container">
 
-    <div>
-      <h2>Profile</h2>
+      <div class="header-container">
+        <img class="dp" src="images/dp.jpg">
+        <h1>Iris Sim Gwek Keow</h1>
+      </div>
+
+      <div class="intro-container">
+        <p>Hi there! </p>
+        <p> I am Iris, a passionate and dedicated <a href="credentials.html">certified fitness trainer</a> with over <b>
+            18 years of experience </b> in the fitness
+          industry. My goal is to help others achieve a healthier pain-free body. </p>
+        <p>
+          I coach clients from 8 years to 95 years of age, and I strongly believe that anyone can have a positive life
+          transformation through fitness and a healthy mindset.</p>
+        <p>If this sounds exciting to you, check out some of my <a href="classes.html">existing classes </a> or <a
+            href="contact.html">contact
+            me</a> for <a href="services.html">personal coaching</a> or any other queries.</p>
+        <p>See you around! Thanks for stopping by!</p>
+      </div>
+
+      <div class="break"></div>
+      <br />
+
+      <div class="cards-container">
+        <h2>Click to find out more:</h2>
+        <div class="cards">
+          <div class="card bg-blur" onclick="navigate('credentials')">
+            <img class="card-icons" src="icons/grad.svg" />
+            <span class="card-label">My Credentials</span>
+          </div>
+
+          <div class="card bg-blur" onclick="navigate('services')">
+            <img class="card-icons" src="icons/weight.svg" />
+            <span class="card-label">My Services</span>
+          </div>
+
+          <div class="card bg-blur" onclick="navigate('classes')">
+            <img class="card-icons" src="icons/cal.svg" />
+            <span class="card-label">Class Schedules</span>
+          </div>
+
+          <div class="card bg-blur" onclick="navigate('contact')">
+            <img class="card-icons" src="icons/contact.svg" />
+            <span class="card-label">Contact Me</span>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
   </main>
