@@ -8,6 +8,11 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: scroll;
+  height: 80em;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 p,
@@ -26,33 +31,29 @@ b {
   color: #F19399;
 }
 
-.index-page-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100vw;
-  place-items: center;
-  background: #000000;
-  background: linear-gradient(46deg, rgba(0, 0, 0, 1) 76%, rgba(93, 12, 17, 1) 100%);
-}
-
 .page-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   place-items: center;
   background: #000000;
   background: linear-gradient(46deg, rgba(0, 0, 0, 1) 76%, rgba(93, 12, 17, 1) 100%);
 }
 
-.container {
+.container,
+.container-sub {
   display: flex;
   flex-direction: column;
   place-items: center;
   height: 100%;
-  width: 30%;
+  width: 630px;
+  margin-top: 48px;
   margin-bottom: 48px;
+}
+
+.container-sub {
+  place-items: start;
 }
 
 .dp {
@@ -73,29 +74,37 @@ b {
 .bg-container {
   height: 160px;
   width: 100%;
-  position: absolute;
-  top: 0px;
-  z-index: 2;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
 }
 
-.header-container {
-  margin-top: 50px;
+.header-container,
+.header-container-sub {
+  margin-top: 70px;
   display: flex;
   flex-direction: row;
   gap: 24px;
   justify-content: center;
-  z-index: 3;
+  width: 80%;
 }
 
-.header-container>h1 {
-  margin-top: 32px;
+.header-container-sub {
+  margin-top: 50px;
+  width: 630px;
+  justify-content: start;
+}
+
+.header-container>h1,
+.header-container-sub>h1 {
+  margin-top: 52px;
   font-size: 48px;
   color: white;
 }
 
 .intro-container {
   margin-top: 24px;
-  margin-left: 74px;
 }
 
 .break {
@@ -109,7 +118,6 @@ b {
 
 .cards-container {
   width: 630px;
-  margin-left: 74px;
 }
 
 .cards {
@@ -122,11 +130,14 @@ b {
 }
 
 .card {
-  height: 100px;
-  width: 250px;
+  height: 70px;
+  width: 230px;
+  padding-left: 24px;
+
   display: flex;
+  justify-content: start;
   place-items: center;
-  justify-content: center;
+
   cursor: pointer;
   gap: 24px;
   border-radius: 10px;
@@ -151,7 +162,39 @@ b {
   color: #c9c9c9;
 }
 
+@media (max-width: 830px) {
+  .dp {
+    height: 120px;
+    width: 120px;
+  }
+
+  .header-container>h1 {
+    margin-top: 32px;
+    font-size: 46px;
+  }
+
+  .container {
+    margin-top: 24px;
+    width: 530px;
+  }
+
+  .cards-container {
+    width: 530px;
+  }
+
+  .cards {
+    gap: 16px;
+    width: 100%;
+  }
+
+  .card {
+    gap: 16px;
+  }
+
+}
+
 @media (max-width: 600px) {
+
   .container {
     width: 80%;
   }
@@ -172,7 +215,7 @@ b {
 
   .header-container>h1 {
     margin-top: 10px;
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .intro-container {
@@ -193,13 +236,6 @@ b {
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
-  }
-
-  .card {
-    height: 70px;
-    width: 230px;
-    justify-content: start;
-    padding-left: 30px;
   }
 
 }
