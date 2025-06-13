@@ -4,6 +4,10 @@ h1 {
   color: #c9c9c9;
 }
 
+html {
+  background-color: black;
+}
+
 html,
 body {
   margin: 0;
@@ -17,6 +21,24 @@ body {
 
 main {
   overflow-x: hidden;
+}
+
+button {
+  height: 40px;
+  padding: 8px;
+  font-size: 18px;
+
+  border-radius: 10px;
+  border: 2px solid #F19399;
+  background-color: black;
+
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  cursor: pointer;
 }
 
 p,
@@ -168,14 +190,38 @@ b {
   color: #c9c9c9;
 }
 
-.cal-grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+.card-img-cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
+.book-links>h2 {
+  font-size: 40px;
+}
+
+.schedule-img-container {
+  width: 100%;
+  overflow: scroll;
+}
+
+.schedule-img-actions-container {
+  margin-bottom: 12px;
+}
+
+.ext-open {
+  height: 24px;
+  width: 24px;
+}
+
+.ext-open-label {
+  color: #F19399;
+}
+
+.ex-classes {
+  padding: 4px;
+  background: white;
+}
 
 @media (max-width: 830px) {
   .dp {

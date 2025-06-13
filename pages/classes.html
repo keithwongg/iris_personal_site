@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Iris Sim Gwek Keow</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../icons/favicon.ico" />
+  <script src="../index.js"></script>
+</head>
+
+<body>
+
+  <main class="page-container">
+
+    <div class="bg-container bg-blur">
+      <div class="header-container-sub">
+        <h1>Class Schedules</h1>
+      </div>
+    </div>
+
+    <div class="container-sub">
+
+      <div class="schedule-img-actions-container">
+        <button onclick="openInNewTab('../images/schedule.png')">
+          <img class="ext-open" src="../icons/ext.svg" />
+          <span class="ext-open-label">
+            Open Schedule in New Tab
+          </span>
+        </button>
+      </div>
+      <div class="schedule-img-container">
+        <img src="../images/schedule.png" />
+      </div>
+
+
+      <div class="break"></div>
+      <br />
+
+      <div class="book-links">
+
+        <h2>Click the following and book the slots there: </h2>
+
+        <div class="cards">
+
+          <div class="card bg-blur ex-classes"
+            onclick="openInNewTab('https://activesg.gov.sg/programmes?filters=%7B%22searchQuery%22%3A%22iris+sim%22%2C%22showAvailableOnlyFilter%22%3Atrue%2C%22activityIds%22%3A%5B%22CzaggQ47puw206WKFsMF6%22%2C%22tZ7LsOQ4VSODS3MonJlGG%22%2C%22io9U7SgkmzLowMNlUPSMe%22%5D%7D')">
+            <img class="card-img-cover" src="../images/activesglogo.png" />
+          </div>
+
+          <div class="card bg-blur ex-classes"
+            onclick="openInNewTab('https://www.onepa.gov.sg/courses/search?course=IRIS%20SIM%20GWEK%20KEOW&id=5b9686cc-036a-e811-8110-00155d005003&type=trainer')">
+            <img class="card-img-cover" src="../images/onepa.png" />
+          </div>
+
+          <div class="card bg-blur ex-classes" onclick="openInNewTab('https://forms.gle/LJZraBV8nrtv16iU7')">
+            <img class="card-img-cover" src="../images/zoom.jpg" />
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
