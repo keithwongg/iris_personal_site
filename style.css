@@ -33,7 +33,7 @@ b {
   width: 100vw;
   place-items: center;
   background: #000000;
-  background: linear-gradient(46deg, rgba(0, 0, 0, 1) 57%, rgba(123, 16, 23, 1) 100%);
+  background: linear-gradient(46deg, rgba(0, 0, 0, 1) 76%, rgba(93, 12, 17, 1) 100%);
 }
 
 .page-container {
@@ -43,7 +43,7 @@ b {
   width: 100vw;
   place-items: center;
   background: #000000;
-  background: linear-gradient(46deg, rgba(0, 0, 0, 1) 57%, rgba(123, 16, 23, 1) 100%);
+  background: linear-gradient(46deg, rgba(0, 0, 0, 1) 76%, rgba(93, 12, 17, 1) 100%);
 }
 
 .container {
@@ -128,7 +128,7 @@ b {
   place-items: center;
   justify-content: center;
   cursor: pointer;
-  gap: 12px;
+  gap: 24px;
   border-radius: 10px;
   border: 1px solid #F19399;
 
@@ -152,17 +152,17 @@ b {
 }
 
 @media (max-width: 600px) {
-  main {
-    width: 90%;
+  .container {
+    width: 80%;
   }
 
   .dp {
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
   }
 
   .bg-container {
-    height: 160px;
+    height: 120px;
   }
 
   .header-container {
@@ -171,14 +171,35 @@ b {
   }
 
   .header-container>h1 {
-    margin-top: 24px;
-    font-size: 32px;
-    color: white;
+    margin-top: 10px;
+    font-size: 28px;
   }
 
   .intro-container {
     width: 100%;
-    margin: 0px;
+    margin: 14px 0 0 0;
+  }
+
+  .cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .cards {
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .card {
+    height: 70px;
+    width: 230px;
+    justify-content: start;
+    padding-left: 30px;
   }
 
 }
