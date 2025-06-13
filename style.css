@@ -4,11 +4,15 @@ h1 {
   color: #c9c9c9;
 }
 
+html,
 body {
   margin: 0;
+  height: 100%;
+}
+
+body {
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 80em;
 }
 
 main {
@@ -54,6 +58,8 @@ b {
 
 .container-sub {
   place-items: start;
+  height: fit-content;
+  margin-bottom: 80px;
 }
 
 .dp {
@@ -161,6 +167,15 @@ b {
 .cards-container>h2 {
   color: #c9c9c9;
 }
+
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
 
 @media (max-width: 830px) {
   .dp {
