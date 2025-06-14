@@ -24,7 +24,7 @@
 
     <div class="container-sub">
 
-      <p>Image provides an overview of the schedules. Links for booking are at the bottom of the page.</p>
+      <h2>Overall Schedule</h2>
 
       <div class="schedule-img-actions-container">
         <button onclick="openInNewTab('../images/schedule.png')">
@@ -37,37 +37,138 @@
       <div class="schedule-img-container">
         <img src="../images/schedule.png" />
       </div>
-      <span>you can scroll the image sideways</span>
+      <span>*you can scroll the image sideways</span>
 
 
       <div class="break"></div>
       <br />
 
-      <div> insert some address + ext google maps links or something here</div>
 
-      <div class="break"></div>
-      <br />
+      <h2>I currently teach at 4 locations.</h2>
 
-      <div class="book-links">
+      <h2>Check them out below and secure your slots early. See you there!</h2>
 
-        <h2>Click the following and book the slots there: </h2>
+      <div class="bookings-container">
 
-        <div class="cards-ext">
-
-          <div class="card bg-blur ex-classes"
-            onclick="openInNewTab('https://activesg.gov.sg/programmes?filters=%7B%22searchQuery%22%3A%22iris+sim%22%2C%22showAvailableOnlyFilter%22%3Atrue%2C%22activityIds%22%3A%5B%22CzaggQ47puw206WKFsMF6%22%2C%22tZ7LsOQ4VSODS3MonJlGG%22%2C%22io9U7SgkmzLowMNlUPSMe%22%5D%7D')">
-            <img class="card-img-cover" src="../images/activesglogo.png" />
+        <div class="booking-item-container bg-blur">
+          <div class="display-logo-container">
+            <img src="../images/activesglogo.png" class="img-cover" />
           </div>
-
-          <div class="card bg-blur ex-classes"
-            onclick="openInNewTab('https://www.onepa.gov.sg/courses/search?course=IRIS%20SIM%20GWEK%20KEOW&id=5b9686cc-036a-e811-8110-00155d005003&type=trainer')">
-            <img class="card-img-cover" src="../images/onepa.png" />
+          <h3>ActiveSG <b>Sengkang</b> Sports Centre</h3>
+          <div class="booking-cta-container">
+            <button onclick="openInNewTab('https://maps.app.goo.gl/5vvCxseqiCsFrZby5')" class="loc">
+              <img class="ext-open" src="../icons/location.svg" />
+              <span class="ext-open-label">
+                See Location
+              </span>
+            </button>
+            <button
+              onclick="openInNewTab('https://activesg.gov.sg/programmes?filters=%7B%22searchQuery%22%3A%22iris+sim%22%2C%22venueId%22%3A%22zihKuTAdOBnh86saCU50I%22%2C%22showAvailableOnlyFilter%22%3Afalse%2C%22activityIds%22%3A%5B%22CzaggQ47puw206WKFsMF6%22%2C%22tZ7LsOQ4VSODS3MonJlGG%22%2C%22io9U7SgkmzLowMNlUPSMe%22%5D%2C%22postalCode%22%3A%22544964%22%7D')"
+              class="makebook">
+              <img class="ext-open" src="../icons/ext-blue.svg" />
+              <span class="ext-open-label">
+                Book Slots
+              </span>
+            </button>
           </div>
+          <span>Class Timings:</span>
+          <ul>
+            <li>Fri 7.00pm - Fascial Body Tone</li>
+            <li>Fri 8.00pm - Fascial Kickbox Abs</li>
+            <li>Sat 9.00am - Fascial Kickbox Abs</li>
+            <li>Sat 10.00am - Fascial Step Aerobics</li>
+          </ul>
+        </div>
 
-          <div class="card bg-blur ex-classes" onclick="openInNewTab('https://forms.gle/LJZraBV8nrtv16iU7')">
-            <img class="card-img-cover" src="../images/zoom.jpg" />
+        <div class="booking-item-container bg-blur">
+          <div class="display-logo-container">
+            <img src="../images/activesglogo.png" class="img-cover" />
           </div>
+          <h3>ActiveSG <b>PasirRis</b> Sports Centre</h3>
+          <div class="booking-cta-container">
+            <button onclick="openInNewTab('https://maps.app.goo.gl/LnQdcQF1ccJjYviu5')" class="loc">
+              <img class="ext-open" src="../icons/location.svg" />
+              <span class="ext-open-label">
+                See Location
+              </span>
+            </button>
+            <button
+              onclick="openInNewTab('https://activesg.gov.sg/programmes?filters=%7B%22searchQuery%22%3A%22iris+sim%22%2C%22venueId%22%3A%22fFYEBJ0V2jaBt6Ft8wNQx%22%2C%22showAvailableOnlyFilter%22%3Afalse%2C%22activityIds%22%3A%5B%22CzaggQ47puw206WKFsMF6%22%2C%22tZ7LsOQ4VSODS3MonJlGG%22%2C%22io9U7SgkmzLowMNlUPSMe%22%5D%7D')"
+              class="makebook">
+              <img class="ext-open" src="../icons/ext-blue.svg" />
+              <span class="ext-open-label">
+                Book Slots
+              </span>
+            </button>
+          </div>
+          <span>Class Timings:</span>
+          <ul>
+            <li>Sun 9.00am - Fascial Kickbox Abs</li>
+            <li>Sun 10.00am - Fascial Body Tone</li>
+          </ul>
+        </div>
 
+        <div class="booking-item-container bg-blur">
+          <div class="display-logo-container">
+            <img src="../images/onepa.png" class="img-cover" />
+          </div>
+          <h3>555 People's Association <b>(PA)</b></h3>
+          <div class="booking-cta-container">
+            <button onclick="openInNewTab('https://maps.app.goo.gl/4Wk3NnNzETGyqkhw5')" class="loc">
+              <img class="ext-open" src="../icons/location.svg" />
+              <span class="ext-open-label">
+                See Location
+              </span>
+            </button>
+            <button
+              onclick="openInNewTab('https://www.onepa.gov.sg/courses/search?course=&outlet=Ang%20Mo%20Kio-Hougang%20Palmview%20RN&showAllResults=true')"
+              class="makebook">
+              <img class="ext-open" src="../icons/ext-blue.svg" />
+              <span class="ext-open-label">
+                Book Slots
+              </span>
+            </button>
+          </div>
+          <p><b>Location:</b> Block 555, Hougang Street 51 #01-322, Singapore 53055</p>
+          <span>Class Timings:</span>
+          <ul>
+            <li>Mon 7.30am - Body Sculpt</li>
+            <li>Mon 8.30am - Body Sculpt</li>
+            <li>Mon 7.00pm - Kickbox</li>
+            <li>Mon 8.00pm - Pilates Matwork</li>
+            <li>Tue 7.30am - Pilates Matwork</li>
+            <li>Tue 8.30am - Step Aerobics</li>
+            <li>Wed 7.30am - Stretch Fit & Massage</li>
+            <li>Wed 8.30am - Kickbox</li>
+            <li>Thu 7.30am - Pilates Matwork</li>
+            <li>Thu 8.30am - Body Sculpt</li>
+            <li>Thu 7.00pm - Step Aerobics</li>
+            <li>Thu 8.00pm - Kickbox</li>
+            <li>Fri 9.30am - Kickbox</li>
+            <li>Fri 10.30am - Pilates Matwork</li>
+            <li>Sat 12.00pm - Body Sculpt</li>
+            <li>Sat 1.00pm - Pilates Matwork</li>
+          </ul>
+        </div>
+
+        <div class="booking-item-container bg-blur">
+          <div class="display-logo-container">
+            <img src="../images/zoom.jpg" class="img-cover" />
+          </div>
+          <h3><b>Zoom</b></h3>
+          <div class="booking-cta-container">
+            <button onclick="openInNewTab('https://forms.gle/LJZraBV8nrtv16iU7')" class="makebook">
+              <img class="ext-open" src="../icons/ext-blue.svg" />
+              <span class="ext-open-label">
+                Book Slots
+              </span>
+            </button>
+          </div>
+          <span>Class Timings:</span>
+          <ul>
+            <li>Tue 7.00pm - Body Sculpt</li>
+            <li>Sun 5.00pm - Pilates</li>
+          </ul>
         </div>
 
       </div>
