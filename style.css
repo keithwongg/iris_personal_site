@@ -294,7 +294,8 @@ b {
 .schedule-img-container {
   height: 500px;
   width: 100%;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .schedule-img-container>img {
