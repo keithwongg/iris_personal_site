@@ -292,8 +292,13 @@ b {
 }
 
 .schedule-img-container {
+  height: 500px;
   width: 100%;
   overflow: scroll;
+}
+
+.schedule-img-container>img {
+  height: 100%;
 }
 
 .schedule-img-actions-container {
