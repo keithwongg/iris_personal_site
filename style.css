@@ -324,6 +324,12 @@ b {
   width: 100%;
 }
 
+.note {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #F19399;
+}
+
 @media (max-width: 830px) {
   .dp {
     height: 120px;
