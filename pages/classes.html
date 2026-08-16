@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Iris Sim Gwek Keow</title>
+  <title>Class Schedules - Iris Sim Gwek Keow</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/png" href="../icons/favicon.ico" />
   <script src="../index.js"></script>
+  <script src="../data/classes.js"></script>
+  <script src="../classes.js"></script>
 </head>
 
 <body>
@@ -25,14 +27,12 @@
       </div>
     </div>
 
-
     <div class="container-sub">
 
       <h2>Leave Dates (No Class)</h2>
-      <div>
-        <ul>
-          <li>May 27 - Jun 1</li>
-          <li>Oct 27 - Nov 5</li>
+      <div class="leave-dates-card">
+        <ul class="leave-dates-list" id="leave-dates-list">
+          <!-- Populated dynamically from JSON -->
         </ul>
       </div>
 
@@ -40,177 +40,28 @@
 
       <div class="schedule-img-actions-container">
         <button onclick="openInNewTab('../images/schedule.png')">
-          <img class="ext-open" src="../icons/ext.svg" />
+          <img class="ext-open" src="../icons/ext.svg" alt="Open" />
           <span class="ext-open-label">
             Open Schedule in New Tab
           </span>
         </button>
       </div>
       <div class="schedule-img-container">
-        <img src="../images/schedule.png" />
+        <img src="../images/schedule.png" alt="Overall Class Schedule" />
       </div>
       <span>*you can scroll the image sideways</span>
 
-
       <div class="break"></div>
-      <br />
 
+      <div class="note" id="note-banner">
+        <!-- Populated dynamically from JSON -->
+      </div>
 
-      <h2 class="note">⭐ Note: Active SG Classes are only available for booking 4 weeks before the start date of the class.</h2>
+      <h2>Locations &amp; Weekly Classes</h2>
+      <p class="section-intro-text">Check them out below and secure your slots early. See you there!</p>
 
-      <h2>I currently teach at 5 locations.</h2>
-
-      <h2>Check them out below and secure your slots early. See you there!</h2>
-
-      <div class="bookings-container">
-
-        <div class="booking-item-container bg-blur">
-          <div class="display-logo-container">
-            <img src="../images/activesglogo.png" class="img-cover" />
-          </div>
-          <h3>Active SG <b>Hougang</b> Sports Centre</h3>
-          <div class="booking-cta-container">
-            <button onclick="openInNewTab('https://www.google.com/maps/search/?api=1&query=Hougang+Sports+Centre')" class="loc">
-              <img class="ext-open" src="../icons/location.svg" />
-              <span class="ext-open-label">
-                See Location
-              </span>
-            </button>
-            <button
-              onclick="openInNewTab('https://activesg.gov.sg/programmes?filters=%7B%22searchQuery%22%3A%22iris+sim%22%2C%22showAvailableOnlyFilter%22%3Afalse%7D')"
-              class="makebook">
-              <img class="ext-open" src="../icons/ext-blue.svg" />
-              <span class="ext-open-label">
-                Book Slots
-              </span>
-            </button>
-          </div>
-          <span>Class Timings:</span>
-          <ul>
-            <li>Mon 7.15am - Fascial Body Tone</li>
-            <li>Mon 8.30am - Fascial Body Tone</li>
-            <li>Wed 7.15am - Pilates Stretch Fit &amp; Massage</li>
-            <li>Wed 8.30am - Fascial Kickbox Abs</li>
-            <li>Wed 6.30pm - Fascial Body Tone</li>
-            <li>Wed 7.45pm - Fascial Pilates</li>
-            <li>(*17th Jul onwards) Fri 8.30am - Fascial Kickbox Abs</li>
-            <li>(*17th Jul onwards) Fri 9.45am - Fascial Pilates</li>
-          </ul>
-        </div>
-
-        <div class="booking-item-container bg-blur">
-          <div class="display-logo-container">
-            <img src="../images/activesglogo.png" class="img-cover" />
-          </div>
-          <h3>ActiveSG <b>Sengkang</b> Sports Centre</h3>
-          <div class="booking-cta-container">
-            <button onclick="openInNewTab('https://maps.app.goo.gl/5vvCxseqiCsFrZby5')" class="loc">
-              <img class="ext-open" src="../icons/location.svg" />
-              <span class="ext-open-label">
-                See Location
-              </span>
-            </button>
-            <button
-              onclick="openInNewTab('https://activesg.gov.sg/programmes?filters=%7B%22searchQuery%22%3A%22iris+sim%22%2C%22venueId%22%3A%22zihKuTAdOBnh86saCU50I%22%2C%22showAvailableOnlyFilter%22%3Afalse%2C%22activityIds%22%3A%5B%22CzaggQ47puw206WKFsMF6%22%2C%22tZ7LsOQ4VSODS3MonJlGG%22%2C%22io9U7SgkmzLowMNlUPSMe%22%5D%2C%22postalCode%22%3A%22544964%22%7D')"
-              class="makebook">
-              <img class="ext-open" src="../icons/ext-blue.svg" />
-              <span class="ext-open-label">
-                Book Slots
-              </span>
-            </button>
-          </div>
-          <span>Class Timings:</span>
-          <ul>
-            <li>Fri 6.30pm - Fascial Pilates</li>
-            <li>Fri 7.45pm - Fascial Body Tone</li>
-            <li>Sat 8.30am - Fascial Kickbox Abs</li>
-            <li>Sat 9.45am - Fascial Step Aerobics</li>
-          </ul>
-        </div>
-
-        <div class="booking-item-container bg-blur">
-          <div class="display-logo-container">
-            <img src="../images/activesglogo.png" class="img-cover" />
-          </div>
-          <h3>ActiveSG <b>PasirRis</b> Sports Centre</h3>
-          <div class="booking-cta-container">
-            <button onclick="openInNewTab('https://maps.app.goo.gl/LnQdcQF1ccJjYviu5')" class="loc">
-              <img class="ext-open" src="../icons/location.svg" />
-              <span class="ext-open-label">
-                See Location
-              </span>
-            </button>
-            <button
-              onclick="openInNewTab('https://activesg.gov.sg/programmes?filters=%7B%22searchQuery%22%3A%22iris+sim%22%2C%22venueId%22%3A%22fFYEBJ0V2jaBt6Ft8wNQx%22%2C%22showAvailableOnlyFilter%22%3Afalse%2C%22activityIds%22%3A%5B%22CzaggQ47puw206WKFsMF6%22%2C%22tZ7LsOQ4VSODS3MonJlGG%22%2C%22io9U7SgkmzLowMNlUPSMe%22%5D%7D')"
-              class="makebook">
-              <img class="ext-open" src="../icons/ext-blue.svg" />
-              <span class="ext-open-label">
-                Book Slots
-              </span>
-            </button>
-          </div>
-          <span>Class Timings:</span>
-          <ul>
-            <li>Sun 9.00am - Fascial Kickbox Abs</li>
-            <li>Sun 10.00am - Fascial Body Tone</li>
-          </ul>
-        </div>
-
-        <div class="booking-item-container bg-blur">
-          <div class="display-logo-container">
-            <img src="../images/onepa.png" class="img-cover" />
-          </div>
-          <h3>555 People's Association <b>(PA)</b></h3>
-          <div class="booking-cta-container">
-            <button onclick="openInNewTab('https://maps.app.goo.gl/4Wk3NnNzETGyqkhw5')" class="loc">
-              <img class="ext-open" src="../icons/location.svg" />
-              <span class="ext-open-label">
-                See Location
-              </span>
-            </button>
-            <button
-              onclick="openInNewTab('https://www.onepa.gov.sg/courses/search?course=&outlet=Ang%20Mo%20Kio-Hougang%20Palmview%20RN&showAllResults=true')"
-              class="makebook">
-              <img class="ext-open" src="../icons/ext-blue.svg" />
-              <span class="ext-open-label">
-                Book Slots
-              </span>
-            </button>
-          </div>
-          <p><b>Location:</b> Block 555, Hougang Street 51 #01-322, Singapore 530555</p>
-          <span>Class Timings:</span>
-          <ul>
-            <li>Mon 7.00pm - Kickbox</li>
-            <li>Mon 8.00pm - Pilates Matwork</li>
-            <li>Tue 7.30am - Pilates Matwork</li>
-            <li>Tue 8.30am - Step Aerobics</li>
-            <li>Thu 7.30am - Pilates Matwork</li>
-            <li>Thu 8.30am - Body Tone</li>
-            <li>Thu 7.00pm - Step Aerobics</li>
-            <li>Thu 8.00pm - Kickbox</li>
-          </ul>
-        </div>
-
-        <div class="booking-item-container bg-blur">
-          <div class="display-logo-container">
-            <img src="../images/zoom.jpg" class="img-cover" />
-          </div>
-          <h3><b>Zoom</b></h3>
-          <div class="booking-cta-container">
-            <button onclick="openInNewTab('https://forms.gle/LJZraBV8nrtv16iU7')" class="makebook">
-              <img class="ext-open" src="../icons/ext-blue.svg" />
-              <span class="ext-open-label">
-                Book Slots
-              </span>
-            </button>
-          </div>
-          <span>Class Timings:</span>
-          <ul>
-            <li>Tue 7.00pm - Body Tone</li>
-            <li>Sun 5.00pm - Pilates</li>
-          </ul>
-        </div>
-
+      <div class="bookings-container" id="bookings-container">
+        <!-- Populated dynamically from JSON -->
       </div>
 
     </div>
