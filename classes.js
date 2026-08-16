@@ -67,12 +67,16 @@ function renderClassSchedule(data) {
         <div class="day-group">
           <div class="day-badge">${escapeHtml(group.day)}</div>
           <div class="day-slots">
-            ${(group.slots || []).map(slot => `
-              <div class="class-slot">
-                <span class="slot-time">${escapeHtml(slot.time)}</span>
+            ${(group.slots || []).map(slot => {
+              const isPm = (slot.time || '').toUpperCase().includes('PM');
+              const periodClass = isPm ? 'is-pm' : 'is-am';
+              return `
+              <div class="class-slot ${periodClass}">
+                <span class="slot-time ${periodClass}">${escapeHtml(slot.time)}</span>
                 <span class="slot-name">${escapeHtml(slot.name)}</span>
               </div>
-            `).join('')}
+            `;
+            }).join('')}
           </div>
         </div>
       `).join('');
@@ -89,7 +93,13 @@ function renderClassSchedule(data) {
           </div>
           ${addressHtml}
           <div class="schedule-section">
-            <div class="schedule-header-badge">Class Timings</div>
+            <div class="schedule-header-badge">
+              <span>Class Timings</span>
+              <div class="timing-legend">
+                <span class="legend-tag is-am">AM Morning</span>
+                <span class="legend-tag is-pm">PM Evening</span>
+              </div>
+            </div>
             <div class="day-groups-container">
               ${scheduleHtml}
             </div>

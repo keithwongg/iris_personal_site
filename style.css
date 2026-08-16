@@ -318,15 +318,43 @@ b {
 .schedule-header-badge {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 8px;
   font-size: 14px;
   font-weight: 700;
   color: #F19399;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   padding-bottom: 6px;
   border-bottom: 1px solid rgba(241, 147, 153, 0.2);
+}
+
+.timing-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.legend-tag.is-am {
+  color: #F19399;
+  background: rgba(241, 147, 153, 0.15);
+  border: 1px solid rgba(241, 147, 153, 0.4);
+}
+
+.legend-tag.is-pm {
+  color: #63C5E3;
+  background: rgba(99, 197, 227, 0.15);
+  border: 1px solid rgba(99, 197, 227, 0.4);
 }
 
 .day-groups-container {
@@ -379,16 +407,33 @@ b {
 
 .class-slot:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(241, 147, 153, 0.35);
+  border-color: rgba(255, 255, 255, 0.15);
   transform: translateX(3px);
 }
 
-.slot-time {
+/* AM Timing Badge (Coral Rose Accent) */
+.slot-time.is-am {
   font-size: 13px;
   font-weight: 700;
-  color: #ffffff;
-  background: rgba(241, 147, 153, 0.2);
-  border: 1px solid rgba(241, 147, 153, 0.35);
+  color: #ffd8dc;
+  background: rgba(241, 147, 153, 0.18);
+  border: 1px solid rgba(241, 147, 153, 0.45);
+  border-radius: 6px;
+  padding: 4px 8px;
+  min-width: 74px;
+  text-align: center;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  box-sizing: border-box;
+}
+
+/* PM Timing Badge (Twilight Blue Accent) */
+.slot-time.is-pm {
+  font-size: 13px;
+  font-weight: 700;
+  color: #c9f2fc;
+  background: rgba(99, 197, 227, 0.18);
+  border: 1px solid rgba(99, 197, 227, 0.45);
   border-radius: 6px;
   padding: 4px 8px;
   min-width: 74px;
@@ -667,12 +712,22 @@ b {
     padding: 14px;
   }
 
+  .timing-legend {
+    gap: 4px;
+  }
+
+  .legend-tag {
+    font-size: 9px;
+    padding: 2px 5px;
+  }
+
   .class-slot {
     padding: 7px 10px;
     gap: 10px;
   }
 
-  .slot-time {
+  .slot-time.is-am,
+  .slot-time.is-pm {
     font-size: 12px;
     min-width: 66px;
     padding: 3px 6px;
