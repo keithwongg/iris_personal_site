@@ -107,6 +107,12 @@ window.CLASSES_DATA = {
             { "time": "7:00 PM", "name": "Step" },
             { "time": "8:00 PM", "name": "Kickbox" }
           ]
+        },
+        {
+          "day": "Sunday",
+          "slots": [
+            { "time": "10:00 AM", "name": "Body Tone" },
+          ]
         }
       ]
     },
