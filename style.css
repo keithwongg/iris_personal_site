@@ -59,6 +59,7 @@ b {
 
 .active-years {
   display: inline;
+  color: inherit;
 }
 
 .page-container {
