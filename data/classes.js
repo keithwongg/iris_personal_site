@@ -3,7 +3,7 @@ window.CLASSES_DATA = {
     "May 27 – Jun 1",
     "Oct 27 – Nov 5"
   ],
-  "note": "ActiveSG Classes are only available for booking 4 weeks before the start date of the class.",
+  "note": "ActiveSG Classes are only available for booking 6 weeks before the start date of the class.",
   "centres": [
     {
       "id": "hougang",
@@ -130,7 +130,7 @@ window.CLASSES_DATA = {
           ]
         },
         {
-          "day": "Saturday",
+          "day": "Sunday",
           "slots": [
             { "time": "5:00 PM", "name": "Pilates" }
           ]

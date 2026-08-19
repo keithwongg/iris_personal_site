@@ -57,6 +57,10 @@ b {
   color: #F19399;
 }
 
+.active-years {
+  display: inline;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;

@@ -30,7 +30,8 @@
         <p> I am Iris, a passionate and dedicated <a href="pages/certifications.html">certified fitness trainer</a> with
           over
           <b>
-            18 years of experience </b> in the fitness
+            <p id="activeYears" class="active-years"></p> years of experience
+          </b> in the fitness
           industry. My goal is to help others achieve a healthier, stronger and fitter pain-free body.
         </p>
         <p>
@@ -76,5 +77,12 @@
 
   </main>
 </body>
+
+<script>
+  const currentDate = new Date();
+  const startDate = new Date('2007-01-01');
+  const activeYears = currentDate.getFullYear() - startDate.getFullYear()
+  document.getElementById("activeYears").innerText = activeYears
+</script>
 
 </html>
